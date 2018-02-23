@@ -30,7 +30,7 @@ DEFAULT CHARACTER SET = big5;
 1. Enter your userid via second 'Enter your userid' input field.
 2. Click on the 'View your Favourite Images' button
 3. The Favourite list of the user will be displayed
-4. To remove image from Favourite list, please click on the 'Remove image' link
+4. To remove image from Favourite list, please click on the 'Remove image' link 
 
 
 
