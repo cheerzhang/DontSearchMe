@@ -1,0 +1,46 @@
+<div class="container">
+  <form class="form-inline"  #baseSearchForm="ngForm" (ngSubmit)="getImages()">
+    <div class="form-row">
+      <div cass="form-group mx-sm-3 mb-2">
+        <label for="inlineFOrmInp" class="sr-only">Search Key Words</label>
+        <input name="kw"  type="text" class="form-control mb-2" id="inlineFOrmInp" placeholder="Keywords" ngModel required>
+      </div>
+      <div class="form-group mx-sm-3 mb-2">
+        <select  name="rating"  class="form-control mb-2" id="inlineFOrmInpt" ngModel required>
+          <option selected value="G">G</option>
+          <option value="PG">PG</option>
+          <option value="PG-13">PG-13</option>
+          <option value="R">R</option>
+          <option value="Y">Y</option>
+        </select>
+      </div>
+    </div>
+    <div class=form-row>
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="inlineFOrmIn" class="sr-only">limit</label>
+        <select  name="limit"  class="form-control mb-2" id="inlineFOrmIn"  ngModel required>
+          <option selected value="0">All</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="5">6</option>
+          <option value="5">7</option>
+          <option value="5">8</option>
+          <option value="5">9</option>
+          <option value="5">10</option>
+        </select>
+      </div>
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="inlineFOrmInput" class="sr-only">Offset</label>
+        <input name="offset"  type="text" class="form-control mb-2" id="inlineFOrmInput" placeholder="offset (any number)" ngModel required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="from-group mx-sm-3 mb-2">
+        <button type="submit" class="btn btn-primary mb-2">Search Giphy images</button>
+      </div>
+    </div>
+  </form>
+</div>

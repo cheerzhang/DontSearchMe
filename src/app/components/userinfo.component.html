@@ -1,0 +1,11 @@
+<div class="container">
+
+  <div class="card" *ngFor="let c of allImgManage" style="width:20rem;">
+    <img src="{{c.imgurl}}" alt="{{ c.imgtitle }}" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">Img title is {{ c.imgtitle }}</p>
+    </div>
+    <div class="card-body">
+      <a href="gsearch/image/delete/{{c.imgid}}&{{childuser}}">Remove {{c.title}} from Favourite</a>
+    </div>
+  </div>

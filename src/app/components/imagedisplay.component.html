@@ -1,0 +1,25 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<div class="container">
+
+  <div class="card" *ngFor="let c of allImgManage" style="width:20rem;">
+    <img src="{{c.imgurl}}" alt="{{ c.title }}" class="card-img-top">
+    <div class="card-body">
+      <p class="card-text">Img title is {{ c.title }}</p>
+    </div>
+    <div class="card-body">
+        <a href="gsearch/image/add/{{c.imgid}}&{{c.title}}&{{c.imgurl}}&{{childuser}}">Add {{c.title}} to Favourite</a>
+    </div>
+  </div>
+
+</div>
+<script>
+  /*var app = angular.module('myApp', []);
+  app.controller('myCtrl', function ($scope) {
+    $scope.myVar = "Hello World!";
+
+  });
+*/
+/*function Main($scope) {
+$scope.rootFolders = 'bob';
+}*/
+</script>

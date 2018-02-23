@@ -1,0 +1,15 @@
+<div class="container">
+  <form class="form-inline"  #SearchlocalForm="ngForm" (ngSubmit)="getlocalImages()">
+    <div class="form-row">
+      <div cass="form-group mx-sm-3 mb-2">
+        <label for="inlineFOrmInp" class="sr-only">Search Key Words</label>
+        <input name="username"  type="text" class="form-control mb-2" id="inlineFOrmInp" placeholder="Enter your userid" ngModel required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="from-group mx-sm-3 mb-2">
+        <button type="submit" class="btn btn-primary mb-2">View your Favourite Images</button>
+      </div>
+    </div>
+  </form>
+</div>
