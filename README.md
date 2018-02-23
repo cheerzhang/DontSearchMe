@@ -1,28 +1,43 @@
-# Giphysearch
+Access the application via http://localhost:4200/
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
+## MySQL commands:
+CREATE SCHEMA `giphy` ;
 
-## Development server
+CREATE TABLE `giphy`.`userdetails` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `userid` INT NULL,
+  `imageid` VARCHAR(200) NULL,
+  `title` VARCHAR(200) NULL,
+  `url` VARCHAR(500) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = big5;
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Steps:
 
-## Code scaffolding
+### To search Giphy images
+1. Search Giphy images via the Keywords, Rating, Number of Returned Images and Offset input fields
+2. Click on the 'Search Giphy images' button
+3. See search result below the button. Pagination saved at Component (but not displayed on webpage).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### To add image to Favourite
+1. Enter your userid via first 'Enter your userid' input field
+2. Click on the 'Login' button
+3. Click on the image link from the search result to save as Favourite
+4. To add another image or view user details, please click on the 'Back' button of the browser
 
-## Build
+### To view user details
+1. Enter your userid via second 'Enter your userid' input field.
+2. Click on the 'View your Favourite Images' button
+3. The Favourite list of the user will be displayed
+4. To remove image from Favourite list, please click on the 'Remove image' link
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-"# DontSearchMe" 
+
+
+
